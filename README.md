@@ -31,3 +31,15 @@ Each successful classification can be recorded with a UUID event ID, UTC timesta
 Dashboard counts represent recorded model usage/predictions, not wildlife populations or animal abundance. The model predicts one class for the entire image and does not detect or localize animals. Only the eight frozen classes are supported.
 
 See `README_MEMBER1.md`, `README_MEMBER3.md`, `README_MEMBER4.md`, `README_MEMBER5.md`, and `README_MEMBER6.md` for member-specific details.
+
+# Dashboard
+<img width="1821" height="792" alt="Screenshot 2026-10-15 053402" src="https://github.com/user-attachments/assets/bb07bc11-3057-4b96-8329-d292b6feaae3" />
+<img width="1815" height="861" alt="Screenshot 2026-10-15 053446" src="https://github.com/user-attachments/assets/071fd7a6-6a71-498b-9aad-e3f1e458f925" />
+<img width="1825" height="697" alt="Screenshot 2026-10-15 053558" src="https://github.com/user-attachments/assets/032c20b4-e828-466e-bce8-450b8eb5a8b0" />
+<img width="1818" height="830" alt="Screenshot 2026-10-15 053626" src="https://github.com/user-attachments/assets/1f7d1b84-a3ca-4e75-af1d-7886da9e761f" />
+
+
+
+
+
+
