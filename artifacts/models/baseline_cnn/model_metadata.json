@@ -1,0 +1,63 @@
+{
+  "model_version": "baseline-cnn-v1",
+  "architecture": "3 blocks (32,64,128), two 3x3 convs/block, BN/ReLU, max pool/dropout, GAP, Dense, softmax",
+  "classes": [
+    "opossum",
+    "rabbit",
+    "coyote",
+    "cat",
+    "squirrel",
+    "raccoon",
+    "dog",
+    "bobcat"
+  ],
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "normalization": "float32 pixel values divided by 255.0",
+  "augmentation": "model-side RandomFlip(horizontal), RandomRotation; active only during training",
+  "seed": 42,
+  "manifest_path": "E:\\CL1- Mini Project\\data\\manifests\\training_manifest.csv",
+  "manifest_sha256": "9188ec1e2b0b778ddd02e3898137a3ded10066b0a1568d33e2eaad4e3ffd3032",
+  "validation_split": "cis_val",
+  "train_rows": 11740,
+  "validation_rows": 2144,
+  "train_class_counts": {
+    "opossum": 2726,
+    "rabbit": 2443,
+    "coyote": 1403,
+    "cat": 1287,
+    "squirrel": 1249,
+    "raccoon": 1027,
+    "dog": 820,
+    "bobcat": 785
+  },
+  "class_weights": {
+    "0": 0.5383345561261922,
+    "1": 0.6006958657388457,
+    "2": 1.0459729151817534,
+    "3": 1.1402486402486403,
+    "4": 1.1749399519615693,
+    "5": 1.428919182083739,
+    "6": 1.7896341463414633,
+    "7": 1.8694267515923566
+  },
+  "epochs_completed": 11,
+  "training_duration_seconds": 18355.172,
+  "config": {
+    "seed": 42,
+    "image_height": 224,
+    "image_width": 224,
+    "channels": 3,
+    "batch_size": 32,
+    "epochs": 30,
+    "learning_rate": 0.001,
+    "early_stopping_patience": 5,
+    "rotation_factor": 0.04,
+    "dropout_rate": 0.3,
+    "dense_units": 128
+  },
+  "validation_caveat": "train/cis_val reportedly share 224 seq_ids; confirm benchmark protocol before interpreting cis_val results."
+}

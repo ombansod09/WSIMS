@@ -1,0 +1,11 @@
+split_a,split_b,shared_seq_ids,shared_locations,shared_file_names,shared_image_ids
+train,cis_val,224,10,0,0
+train,cis_test,0,10,0,0
+train,trans_val,0,0,0,0
+train,trans_test,0,0,0,0
+cis_val,cis_test,0,10,0,0
+cis_val,trans_val,0,0,0,0
+cis_val,trans_test,0,0,0,0
+cis_test,trans_val,0,0,0,0
+cis_test,trans_test,0,0,0,0
+trans_val,trans_test,0,0,0,0

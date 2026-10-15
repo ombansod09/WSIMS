@@ -1,0 +1,43 @@
+{
+  "model": "MobileNetV2",
+  "weights_argument": "imagenet",
+  "pretrained_imagenet": true,
+  "classes": [
+    "opossum",
+    "rabbit",
+    "coyote",
+    "cat",
+    "squirrel",
+    "raccoon",
+    "dog",
+    "bobcat"
+  ],
+  "input_size": [
+    224,
+    224
+  ],
+  "input_contract": "RGB float32 [0,255]; in-model Rescaling to [-1,1] equivalent to mobilenet_v2.preprocess_input",
+  "train_split": "train",
+  "selection_split": "cis_val",
+  "official_splits_unchanged": true,
+  "train_records": 11740,
+  "validation_records": 2144,
+  "seed": 42,
+  "batch_size": 32,
+  "head_epochs_requested": 15,
+  "fine_tune_epochs_requested": 8,
+  "fine_tune_layers_requested": 30,
+  "class_weights": {
+    "opossum": 0.5383345561261922,
+    "rabbit": 0.6006958657388457,
+    "coyote": 1.0459729151817534,
+    "cat": 1.1402486402486403,
+    "squirrel": 1.1749399519615693,
+    "raccoon": 1.428919182083739,
+    "dog": 1.7896341463414633,
+    "bobcat": 1.8694267515923566
+  },
+  "training_wall_seconds": 4791.707,
+  "training_phase": "head_plus_finetune",
+  "warning": "cis_val shares 224 sequence IDs with train per supplied EDA; validate protocol before claiming independent validation."
+}

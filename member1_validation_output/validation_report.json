@@ -1,0 +1,100 @@
+{
+  "project_root": "E:\\CL1- Mini Project",
+  "image_directory": "E:\\CL1- Mini Project\\eccv_18_all_images_sm",
+  "metadata_directory": "E:\\CL1- Mini Project\\eccv_18_annotation_files",
+  "classes_config": "E:\\CL1- Mini Project\\config\\classes.json",
+  "classes_status": "FROZEN",
+  "classes": [
+    "opossum",
+    "rabbit",
+    "coyote",
+    "cat",
+    "squirrel",
+    "raccoon",
+    "dog",
+    "bobcat"
+  ],
+  "image_files_discovered": 57864,
+  "metadata_image_records": 57864,
+  "validation_status_counts": {
+    "scaled_resolution": 57864
+  },
+  "ambiguous_basename_records": 0,
+  "hashing_enabled": true,
+  "exact_duplicate_hash_groups": [
+    {
+      "sha256": "ea53770fac03614f384be0077bc350e174da8419cc47729c113d35e97b41bca4",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58c7f109-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\59055df3-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "b714a8414f89855264642609a2f6940537b87027eafcf0c558a9aa126d1dbe57",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\5894628d-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\592f7067-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "b729c43583e1cf91489fbf9ffb75cc656ff5a3cc38b510166cbbe4e55bfb5adf",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58fa5fb4-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\5930fe72-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "0643a7b7636107b7abd4bb3b931c63cff2d0ba1fdc80f81ab8c233479dd7fed3",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58cca523-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\591fd344-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "69e9738f44349c8416fe5564912a33e3b2489ace815fbbbfe7f6191eb2de6a89",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58eac917-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\592c4e69-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "dc2173e3c0b1b2786001e2c3481c49c8189eb6f1f3c19c57ce35587fbe24b3a4",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58b2ed0a-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\592ac086-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "a86bcd81a530b44427eaddf9f823c6dfc2314cc8aec9118336e3c495ba904e24",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58f10746-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\5922ec43-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    },
+    {
+      "sha256": "4d891fdc46bb00a56a1d24180982105c4709817c61c8bf8cf2458a03da5bc68b",
+      "count": 2,
+      "paths": [
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\58823baa-23d2-11e8-a6a3-ec086b02610b.jpg",
+        "E:\\CL1- Mini Project\\eccv_18_all_images_sm\\59310064-23d2-11e8-a6a3-ec086b02610b.jpg"
+      ]
+    }
+  ],
+  "official_splits_preserved": true,
+  "interpretation": {
+    "scaled_resolution": "Actual and metadata dimensions differ but aspect ratios match within tolerance; likely alternate image resolution, not automatically a corrupt file.",
+    "dimension_mismatch": "Aspect ratio differs or dimensions are otherwise inconsistent; manually review."
+  },
+  "notes": [
+    "A successful decode verifies file readability, not label correctness.",
+    "SHA-256 detects byte-identical files only, not near-duplicate frames.",
+    "Do not alter frozen classes.json or official split assignments without team approval."
+  ]
+}

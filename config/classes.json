@@ -1,0 +1,42 @@
+{
+  "dataset": "Caltech Camera Traps CCT20",
+  "status": "FROZEN",
+  "class_names": [
+    "opossum",
+    "rabbit",
+    "coyote",
+    "cat",
+    "squirrel",
+    "raccoon",
+    "dog",
+    "bobcat"
+  ],
+  "class_to_index": {
+    "opossum": 0,
+    "rabbit": 1,
+    "coyote": 2,
+    "cat": 3,
+    "squirrel": 4,
+    "raccoon": 5,
+    "dog": 6,
+    "bobcat": 7
+  },
+  "original_category_id_to_class": {
+    "1": "opossum",
+    "10": "rabbit",
+    "9": "coyote",
+    "16": "cat",
+    "5": "squirrel",
+    "3": "raccoon",
+    "8": "dog",
+    "6": "bobcat"
+  },
+  "selection_rule": {
+    "count_source": "official training annotation split only",
+    "minimum_training_images_per_class": 500,
+    "maximum_classes": 8,
+    "empty_category_excluded": true,
+    "selection_order": "descending training count, tie-broken alphabetically"
+  },
+  "note": "Frozen after confirming the official training-split counts. This class order is the project-wide source of truth and must not change without retraining."
+}

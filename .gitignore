@@ -1,0 +1,25 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dataset folders
+eccv_18_all_images_sm/
+eccv_18_annotation_files/
+
+# Local prediction history
+artifacts/history/
+*.sqlite3
+*.db
+
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db

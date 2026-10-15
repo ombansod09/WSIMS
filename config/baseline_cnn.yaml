@@ -1,0 +1,11 @@
+seed: 42
+image_height: 224
+image_width: 224
+channels: 3
+batch_size: 32
+epochs: 30
+learning_rate: 0.001
+early_stopping_patience: 5
+rotation_factor: 0.04
+dropout_rate: 0.30
+dense_units: 128

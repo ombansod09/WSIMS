@@ -1,0 +1,352 @@
+{
+  "comparison_protocol": {
+    "split": "cis_val",
+    "n_examples": 2144,
+    "batch_size": 32,
+    "image_size": [
+      224,
+      224
+    ],
+    "color_space": "RGB",
+    "class_order": [
+      "opossum",
+      "rabbit",
+      "coyote",
+      "cat",
+      "squirrel",
+      "raccoon",
+      "dog",
+      "bobcat"
+    ],
+    "manifest": "E:\\CL1- Mini Project\\data\\manifests\\training_manifest.csv",
+    "same_manifest_rows_for_both_models": true,
+    "official_split_assignments_changed": false,
+    "timing_method": "sum of warmed-up batched model-call wall times; excludes decode/resize and is hardware/runtime dependent",
+    "warning": "cis_val has reported sequence-ID overlap with train. Use cis_val only for model selection; report test splits only after model selection is frozen."
+  },
+  "models": {
+    "baseline_cnn": {
+      "checkpoint": "E:\\CL1- Mini Project\\artifacts\\models\\baseline_cnn\\best.keras",
+      "input_contract": "rgb_float32_[0,1]",
+      "parameters": 305896,
+      "checkpoint_size_bytes": 3789223,
+      "accuracy": 0.42863805970149255,
+      "macro_precision": 0.39122973493184643,
+      "macro_recall": 0.4190917153969692,
+      "macro_f1": 0.36517580910406927,
+      "timed_model_call_seconds": 32.023408999928506,
+      "timed_images_excluding_warmup_batch": 2112,
+      "batch_call_ms_per_image_excluding_warmup": 15.162598958299482,
+      "images_per_second_excluding_warmup": 65.9517542309351,
+      "per_class": {
+        "opossum": {
+          "precision": 0.6468330134357005,
+          "recall": 0.6877551020408164,
+          "f1-score": 0.6666666666666666,
+          "support": 490.0
+        },
+        "rabbit": {
+          "precision": 0.656441717791411,
+          "recall": 0.21703853955375255,
+          "f1-score": 0.32621951219512196,
+          "support": 493.0
+        },
+        "coyote": {
+          "precision": 0.29446640316205536,
+          "recall": 0.5228070175438596,
+          "f1-score": 0.37673830594184576,
+          "support": 285.0
+        },
+        "cat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 192.0
+        },
+        "squirrel": {
+          "precision": 0.5046728971962616,
+          "recall": 0.4864864864864865,
+          "f1-score": 0.4954128440366973,
+          "support": 222.0
+        },
+        "raccoon": {
+          "precision": 0.36681222707423583,
+          "recall": 0.4970414201183432,
+          "f1-score": 0.4221105527638191,
+          "support": 169.0
+        },
+        "dog": {
+          "precision": 0.23394495412844038,
+          "recall": 0.7338129496402878,
+          "f1-score": 0.35478260869565215,
+          "support": 139.0
+        },
+        "bobcat": {
+          "precision": 0.4266666666666667,
+          "recall": 0.2077922077922078,
+          "f1-score": 0.2794759825327511,
+          "support": 154.0
+        },
+        "accuracy": 0.42863805970149255,
+        "macro avg": {
+          "precision": 0.39122973493184643,
+          "recall": 0.4190917153969692,
+          "f1-score": 0.36517580910406927,
+          "support": 2144.0
+        },
+        "weighted avg": {
+          "precision": 0.46490230093259355,
+          "recall": 0.42863805970149255,
+          "f1-score": 0.4051006166437777,
+          "support": 2144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          337,
+          0,
+          57,
+          0,
+          0,
+          75,
+          3,
+          18
+        ],
+        [
+          17,
+          107,
+          163,
+          0,
+          30,
+          21,
+          155,
+          0
+        ],
+        [
+          20,
+          35,
+          149,
+          0,
+          14,
+          21,
+          33,
+          13
+        ],
+        [
+          93,
+          0,
+          8,
+          0,
+          37,
+          10,
+          44,
+          0
+        ],
+        [
+          0,
+          6,
+          15,
+          0,
+          108,
+          0,
+          93,
+          0
+        ],
+        [
+          39,
+          0,
+          34,
+          0,
+          0,
+          84,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          15,
+          0,
+          22,
+          0,
+          102,
+          0
+        ],
+        [
+          15,
+          15,
+          65,
+          0,
+          3,
+          18,
+          6,
+          32
+        ]
+      ]
+    },
+    "mobilenetv2": {
+      "checkpoint": "E:\\CL1- Mini Project\\artifacts\\models\\mobilenetv2\\mobilenetv2_best.keras",
+      "input_contract": "rgb_float32_[0,255]_then_in_model_to_[-1,1]",
+      "parameters": 2268232,
+      "checkpoint_size_bytes": 21838351,
+      "accuracy": 0.8330223880597015,
+      "macro_precision": 0.8158595401305355,
+      "macro_recall": 0.8259893357720716,
+      "macro_f1": 0.8182434334968767,
+      "timed_model_call_seconds": 33.43363190004311,
+      "timed_images_excluding_warmup_batch": 2112,
+      "batch_call_ms_per_image_excluding_warmup": 15.83031813449011,
+      "images_per_second_excluding_warmup": 63.16992441366433,
+      "per_class": {
+        "opossum": {
+          "precision": 0.8786516853932584,
+          "recall": 0.7979591836734694,
+          "f1-score": 0.8363636363636363,
+          "support": 490.0
+        },
+        "rabbit": {
+          "precision": 0.863013698630137,
+          "recall": 0.8945233265720081,
+          "f1-score": 0.8784860557768924,
+          "support": 493.0
+        },
+        "coyote": {
+          "precision": 0.8717948717948718,
+          "recall": 0.8350877192982457,
+          "f1-score": 0.8530465949820788,
+          "support": 285.0
+        },
+        "cat": {
+          "precision": 0.8653846153846154,
+          "recall": 0.703125,
+          "f1-score": 0.7758620689655172,
+          "support": 192.0
+        },
+        "squirrel": {
+          "precision": 0.8601694915254238,
+          "recall": 0.9144144144144144,
+          "f1-score": 0.8864628820960698,
+          "support": 222.0
+        },
+        "raccoon": {
+          "precision": 0.6568627450980392,
+          "recall": 0.7928994082840237,
+          "f1-score": 0.7184986595174263,
+          "support": 169.0
+        },
+        "dog": {
+          "precision": 0.7870967741935484,
+          "recall": 0.8776978417266187,
+          "f1-score": 0.8299319727891157,
+          "support": 139.0
+        },
+        "bobcat": {
+          "precision": 0.7439024390243902,
+          "recall": 0.7922077922077922,
+          "f1-score": 0.7672955974842768,
+          "support": 154.0
+        },
+        "accuracy": 0.8330223880597015,
+        "macro avg": {
+          "precision": 0.8158595401305355,
+          "recall": 0.8259893357720716,
+          "f1-score": 0.8182434334968767,
+          "support": 2144.0
+        },
+        "weighted avg": {
+          "precision": 0.8379455793589603,
+          "recall": 0.8330223880597015,
+          "f1-score": 0.8333678655044309,
+          "support": 2144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          391,
+          16,
+          12,
+          8,
+          0,
+          42,
+          4,
+          17
+        ],
+        [
+          8,
+          441,
+          4,
+          7,
+          16,
+          1,
+          9,
+          7
+        ],
+        [
+          6,
+          15,
+          238,
+          1,
+          2,
+          2,
+          9,
+          12
+        ],
+        [
+          17,
+          10,
+          4,
+          135,
+          10,
+          14,
+          2,
+          0
+        ],
+        [
+          0,
+          11,
+          0,
+          0,
+          203,
+          0,
+          8,
+          0
+        ],
+        [
+          17,
+          4,
+          6,
+          2,
+          0,
+          134,
+          0,
+          6
+        ],
+        [
+          0,
+          8,
+          1,
+          3,
+          5,
+          0,
+          122,
+          0
+        ],
+        [
+          6,
+          6,
+          8,
+          0,
+          0,
+          11,
+          1,
+          122
+        ]
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.14.4",
+    "tensorflow": "2.22.0-rc0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

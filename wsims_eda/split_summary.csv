@@ -1,0 +1,6 @@
+split,images,annotations,unique_seq_ids,unique_locations,duplicate_image_ids,duplicate_file_names
+train,13553,14071,5527,10,0,0
+cis_val,3484,3582,1421,10,0,0
+cis_test,15827,16395,6424,10,0,0
+trans_val,1725,1865,589,1,0,0
+trans_test,23275,24028,8982,9,0,0
